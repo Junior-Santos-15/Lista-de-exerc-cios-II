@@ -1,57 +1,32 @@
-Algoritmo "ATIVIDADE 01 - PREFEITURA"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
+Algoritmo "ATIVIDADE 05 - NÚMEROS PRIMOS"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Junior Santos
+// Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 19/04/2023
 Var
-   // Seção de Declarações das variáveis
-   filho, salario, soma, totalFamilia, maiorSalario, menorSalario: real
-   mediaSalarial, mediaFilho: real
+// Seção de Declarações das variáveis 
+  numeroFinal, divisor, j, i: inteiro
+
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  escreva("Digite um número final: ")
+  leia(numeroFinal)
+  
+  para i de 1 ate numeroFinal faca
+  divisor <- 0
+  
+  para j de 1 ate i faca
+    se(i mod j = 0) entao
+    divisor <- divisor + 1
+    fimse
+    fimpara
+    
+    se (divisor = 2) entao
+    escreva(i)
+    fimse
 
-   salario <- 1
-
-   enquanto (salario >= 0) faca
-      escreva("Qual é o seu salário ? ")
-      leia(salario)
-      se (salario >= 0) entao
-
-         salario <- soma + salario
-
-         se(salario > maiorSalario) entao
-            maiorSalario <- salario
-         senao
-            menorSalario <- salario
-         fimse
-
-
-         escreva("Quantos filhos você tem ? ")
-         leia(filho)
-
-         limpatela
-
-         mediaFilho <- filho + 1
-         totalFamilia <- totalFamilia + 1
-         mediaSalarial <- totalFamilia / salario
-
-      fimse
-   fimenquanto
-
-   limpatela
-
-   escreval("Total de famílias que responderam: " ,totalFamilia)
-   escreval("Média do salário da população: " ,mediaSalarial)
-   escreval("Média de filhos: " ,mediaFilho)
-   escreval("Maior salário: " ,maiorSalario)
-   escreval("Menor salário: " ,menorSalario)
-
-
-
-
-
-
+    fimpara
 
 
 Fimalgoritmo
