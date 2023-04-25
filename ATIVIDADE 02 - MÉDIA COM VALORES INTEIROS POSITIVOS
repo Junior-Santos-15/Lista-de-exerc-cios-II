@@ -1,0 +1,35 @@
+Algoritmo "ATIVIDADE 02 - MÉDIA COM VALORES INTEIROS POSITIVOS"
+// Disciplina  :  [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 25/04/2023
+Var
+   // Seção de Declarações das variáveis
+   valor, media, soma, contador : real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+    escreva("Digite um valor ? ")
+         leia(valor)
+
+
+   enquanto (valor >= 0) faca
+
+         soma <- soma + valor
+         contador <- contador + 1
+
+         limpatela
+         escreva("Deseja digitar outro valor?")
+         leia(valor)
+
+         media <- soma / contador
+
+   fimenquanto
+
+
+   escreval("A média é: ", media)
+   
+   
+Fimalgoritmo
